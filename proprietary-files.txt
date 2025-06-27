@@ -256,11 +256,7 @@ product/app/ThermalFanService/ThermalFanService.apk
 system_ext/etc/permissions/com.sonymobile.gesdklibrary.xml
 system_ext/framework/com.sonymobile.gesdklibrary.jar
 
-# Music app
-product/priv-app/SemcMusic/SemcMusic.apk
-product/priv-app/SomcMediaExtensionProvider-Yodo/SomcMediaExtensionProvider-Yodo.apk
+# UsbExtOutAudio app
 product/priv-app/UsbExtOutAudio/UsbExtOutAudio.apk
 product/etc/permissions/jp.co.sony.mc.usbextoutaudio.xml
-product/etc/permissions/com.sonyericsson.music.xml
-product/app/SomcMediaExtensionProviderStarter/SomcMediaExtensionProviderStarter.apk
 product/lib64/libmepstarterjni.so

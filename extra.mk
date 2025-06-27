@@ -22,15 +22,6 @@ PRODUCT_SOONG_NAMESPACES += \
 TARGET_EXCLUDES_AUDIOFX := true
 PRODUCT_NO_CAMERA := true
 
-# Settings overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-sony
-
-PRODUCT_PACKAGES += \
-    XperiaAudioAddon \
-    XperiaTSRA \
-    XperiaSettingsMenu # modified to launch Sony stock audio settings
-
 # Sony Framework
 ifeq ($(TARGET_SHIPS_SONY_FRAMEWORK),true)
 PRODUCT_COPY_FILES += \

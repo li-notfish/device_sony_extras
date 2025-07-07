@@ -29,16 +29,12 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/sony/extras/lib/common/framework/system_ext/,$(TARGET_COPY_OUT_SYSTEM_EXT)/) \
     $(call find-copy-subdir-files,*,device/sony/extras/lib/common/framework/product/,$(TARGET_COPY_OUT_PRODUCT)/)
 endif
-# Sony Camera
-$(call inherit-product, device/sony/extras/lib/yodo/camera/camera.mk)
 
-# Sound Enhancements
+# Audio Enhancements
 $(call inherit-product, device/sony/extras/lib/yodo/audio/audio.mk)
 
 # Live Wallpapers
-ifeq ($(TARGET_SHIPS_SONY_LWP),true)
 $(call inherit-product, device/sony/extras/lib/common/lwp/lwp.mk)
-endif
 
 # Vendor files
 $(call inherit-product, vendor/sony/extras/extras-vendor.mk)

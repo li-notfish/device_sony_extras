@@ -34,7 +34,7 @@ endif
 $(call inherit-product, device/sony/extras/lib/yodo/audio/audio.mk)
 
 # Live Wallpapers
-$(call inherit-product, device/sony/extras/lib/common/lwp/lwp.mk)
+#$(call inherit-product, device/sony/extras/lib/common/lwp/lwp.mk)
 
 # Vendor files
 $(call inherit-product, vendor/sony/extras/extras-vendor.mk)

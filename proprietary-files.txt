@@ -6,12 +6,12 @@ system_ext/etc/permissions/com.sonyericsson.soundenhancement.xml
 system_ext/priv-app/SoundEnhancement/SoundEnhancement.apk
 
 # 360 RA
-product/overlay/ThreeSixtyRASystem-pdx234-Overlay.apk
-system_ext/app/ThreeSixtyRASettings/ThreeSixtyRASettings.apk
-system_ext/etc/permissions/com.sony.threesixtyra.audiofx.xml
-system_ext/etc/permissions/jp.co.sony.threesixtyra.system.xml
-system_ext/framework/com.sony.threesixtyra.audiofx.jar
-system_ext/priv-app/ThreeSixtyRASystem/ThreeSixtyRASystem.apk
+# product/overlay/ThreeSixtyRASystem-pdx234-Overlay.apk
+product/app/ThreeSixtyRASettings/ThreeSixtyRASettings.apk
+product/etc/permissions/com.sony.threesixtyra.audiofx.xml
+product/etc/permissions/jp.co.sony.threesixtyra.system.xml
+product/framework/com.sony.threesixtyra.audiofx.jar
+product/priv-app/ThreeSixtyRASystem/ThreeSixtyRASystem.apk
 vendor/bin/hw/android.hardware.media.c2@1.0-threesixty-ra-service
 vendor/etc/media_codecs_sony_c2_audio.xml
 vendor/etc/init/android.hardware.media.c2@1.0-threesixty-ra-service.rc

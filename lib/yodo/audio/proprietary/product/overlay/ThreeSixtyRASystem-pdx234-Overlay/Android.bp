@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "ThreeSixtyRASystem-pdx234-Overlay",
+    product_specific: true,
+}

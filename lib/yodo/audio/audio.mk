@@ -24,6 +24,11 @@ LOCAL_AUDIO := device/sony/extras/lib/yodo/audio
 # SEPolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(LOCAL_AUDIO)/sepolicy/vendor
 
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(LOCAL_AUDIO)/vintf/dolby_framework_matrix.xml \
+    $(LOCAL_AUDIO)/vintf/threesixty_framework_matrix.xml
+
 # Dolby DAP
 AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 
@@ -48,3 +53,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 PRODUCT_ODM_PROPERTIES += \
     vendor.sony_spatializer.suppress.dolby=true
+
+# Overlay
+PRODUCT_PACKAGES += \
+        ThreeSixtyRASystem-pdx234-Overlay

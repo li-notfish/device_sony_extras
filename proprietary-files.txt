@@ -2,6 +2,8 @@
 
 
 # SoundEnhancement
+system_ext/etc/sysconfig/config_com.sonyericsson.soundenhancement_preferences.xml
+system_ext/etc/default-permissions/exceptions-soundenhancement.xml
 system_ext/etc/permissions/com.sonyericsson.soundenhancement.xml
 system_ext/priv-app/SoundEnhancement/SoundEnhancement.apk
 
@@ -306,3 +308,8 @@ system_ext/framework/com.sonymobile.gesdklibrary.jar
 product/priv-app/UsbExtOutAudio/UsbExtOutAudio.apk
 product/etc/permissions/jp.co.sony.mc.usbextoutaudio.xml
 product/lib64/libmepstarterjni.so
+
+# Sidesense
+system_ext/priv-app/SideSenseApp
+system_ext/priv-app/SideSenseMonitorApp
+system_ext/etc/permissions/

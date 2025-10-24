@@ -310,6 +310,5 @@ product/etc/permissions/jp.co.sony.mc.usbextoutaudio.xml
 product/lib64/libmepstarterjni.so
 
 # Sidesense
-system_ext/priv-app/SideSenseApp
-system_ext/priv-app/SideSenseMonitorApp
-system_ext/etc/permissions/
+system_ext/priv-app/SideSenseApp.apk
+system_ext/priv-app/SideSenseMonitorApp.apk

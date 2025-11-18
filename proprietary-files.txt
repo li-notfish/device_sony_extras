@@ -6,12 +6,15 @@ system_ext/etc/sysconfig/config_com.sonyericsson.soundenhancement_preferences.xm
 system_ext/etc/default-permissions/exceptions-soundenhancement.xml
 system_ext/etc/permissions/com.sonyericsson.soundenhancement.xml
 system_ext/priv-app/SoundEnhancement/SoundEnhancement.apk
+vendor/etc/audio_app_white_list.xml
+product/etc/permissions/com.sonyericsson.music.xml
 
 # 360 RA
 # product/overlay/ThreeSixtyRASystem-pdx234-Overlay.apk
 product/app/ThreeSixtyRASettings/ThreeSixtyRASettings.apk
 product/etc/permissions/com.sony.threesixtyra.audiofx.xml
 product/etc/permissions/jp.co.sony.threesixtyra.system.xml
+product/etc/permissions/com.sony.360ra.xml
 product/framework/com.sony.threesixtyra.audiofx.jar
 product/priv-app/ThreeSixtyRASystem/ThreeSixtyRASystem.apk
 vendor/bin/hw/android.hardware.media.c2@1.0-threesixty-ra-service
@@ -93,6 +96,21 @@ vendor/etc/windnoise_reduction_stat.data
 vendor/etc/windnoise_reduction_back.data
 vendor/etc/windnoise_reduction.data
 vendor/etc/windnoise_reduction_stat_back.data
+
+# WirelessPlaybackQuality
+system_ext/priv-app/WirelessPlaybackQuality/WirelessPlaybackQuality.apk
+system_ext/etc/default-permissions/privapp-exceptions-wirelessplayback.xml
+system_ext/priv-app/ExtendedAudioService/ExtendedAudioService.apk
+system_ext/etc/permissions/com.sonymobile.audioutil.xml
+system_ext/etc/permissions/privapp-permissions-wirelessplayback.xml
+
+# aptX
+system_ext/app/aptxacu/aptxacu.apk
+system_ext/bin/aptxalsOverlayCreateProject.sh
+system_ext/etc/permissions/privapp-permissions-aptxals.xml
+system_ext/etc/permissions/privapp-permissions-aptxui.xml
+system_ext/priv-app/aptxals/aptxals.apk
+system_ext/priv-app/aptxui/aptxui.apk
 
 # 360 RA data file
 vendor/etc/XTC_speaker_coef.hki
@@ -309,6 +327,15 @@ product/priv-app/UsbExtOutAudio/UsbExtOutAudio.apk
 product/etc/permissions/jp.co.sony.mc.usbextoutaudio.xml
 product/lib64/libmepstarterjni.so
 
+# GPS
+product/priv-app/SomcExtGps/SomcExtGps.apk
+product/etc/default-permissions/default-permissions_com.sonymobile.gps.extension.xml
+product/etc/permissions/privapp-permissions_com.sonymobile.gps.extension.xml
+
+
 # Sidesense
-system_ext/priv-app/SideSenseApp/SideSenseApp.apk
-system_ext/priv-app/SideSenseMonitorApp/SideSenseMonitorApp.apk
+#system_ext/priv-app/SideSenseApp/SideSenseApp.apk
+#system_ext/priv-app/SideSenseMonitorApp/SideSenseMonitorApp.apk
+#system_ext/framework/com.sonymobile.sysuiextension_impl.jar
+#system_ext/etc/permissions/com.sonymobile.sidesenseapp.xml
+#system_ext/etc/permissions/com.sonymobile.sysuiextension.xml

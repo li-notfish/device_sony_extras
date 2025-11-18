@@ -20,7 +20,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # LineageOS overrides
 TARGET_EXCLUDES_AUDIOFX := true
-PRODUCT_NO_CAMERA := true
+PRODUCT_NO_CAMERA := false
 
 # Sony Framework
 ifeq ($(TARGET_SHIPS_SONY_FRAMEWORK),true)

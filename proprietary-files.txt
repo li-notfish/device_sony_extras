@@ -97,20 +97,9 @@ vendor/etc/windnoise_reduction_back.data
 vendor/etc/windnoise_reduction.data
 vendor/etc/windnoise_reduction_stat_back.data
 
-# WirelessPlaybackQuality
-system_ext/priv-app/WirelessPlaybackQuality/WirelessPlaybackQuality.apk
-system_ext/etc/default-permissions/privapp-exceptions-wirelessplayback.xml
+# Audioutil
 system_ext/priv-app/ExtendedAudioService/ExtendedAudioService.apk
 system_ext/etc/permissions/com.sonymobile.audioutil.xml
-system_ext/etc/permissions/privapp-permissions-wirelessplayback.xml
-
-# aptX
-system_ext/app/aptxacu/aptxacu.apk
-system_ext/bin/aptxalsOverlayCreateProject.sh
-system_ext/etc/permissions/privapp-permissions-aptxals.xml
-system_ext/etc/permissions/privapp-permissions-aptxui.xml
-system_ext/priv-app/aptxals/aptxals.apk
-system_ext/priv-app/aptxui/aptxui.apk
 
 # 360 RA data file
 vendor/etc/XTC_speaker_coef.hki
@@ -149,16 +138,3 @@ system_ext/framework/com.sonymobile.gesdklibrary.jar
 product/priv-app/UsbExtOutAudio/UsbExtOutAudio.apk
 product/etc/permissions/jp.co.sony.mc.usbextoutaudio.xml
 product/lib64/libmepstarterjni.so
-
-# GPS
-product/priv-app/SomcExtGps/SomcExtGps.apk
-product/etc/default-permissions/default-permissions_com.sonymobile.gps.extension.xml
-product/etc/permissions/privapp-permissions_com.sonymobile.gps.extension.xml
-
-
-# Sidesense
-#system_ext/priv-app/SideSenseApp/SideSenseApp.apk
-#system_ext/priv-app/SideSenseMonitorApp/SideSenseMonitorApp.apk
-#system_ext/framework/com.sonymobile.sysuiextension_impl.jar
-#system_ext/etc/permissions/com.sonymobile.sidesenseapp.xml
-#system_ext/etc/permissions/com.sonymobile.sysuiextension.xml

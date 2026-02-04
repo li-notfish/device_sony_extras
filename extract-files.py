@@ -22,6 +22,8 @@ namespace_imports = [
     'hardware/qcom-caf/sm8550',
     'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/sony/sm8550-common',
+    "vendor/sony/extra",
+    "device/sony/extra",
 ]
 
 blob_fixups: blob_fixups_user_type = {
@@ -38,6 +40,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libiVptApi.so',
     ): blob_fixup()
         .add_needed('libiVptLibC.so'),
+    'vendor/bin/hw/vendor.dolby.media.c2@1.0-service': blob_fixup()
+        .add_needed("libshim_dolby.so")
 }
 
 module = ExtractUtilsModule(

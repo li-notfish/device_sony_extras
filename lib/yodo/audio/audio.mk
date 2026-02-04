@@ -57,3 +57,7 @@ PRODUCT_ODM_PROPERTIES += \
 # Overlay
 PRODUCT_PACKAGES += \
         ThreeSixtyRASystem-pdx234-Overlay
+
+# Patch
+PRODUCT_PACKAGES += \
+    libshim_dolby

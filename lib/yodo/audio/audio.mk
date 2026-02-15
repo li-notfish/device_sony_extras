@@ -23,6 +23,8 @@ LOCAL_AUDIO := device/sony/extras/lib/yodo/audio
 
 # SEPolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(LOCAL_AUDIO)/sepolicy/vendor
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(LOCAL_AUDIO)/sepolicy/public
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(LOCAL_AUDIO)/sepolicy/private
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \

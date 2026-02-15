@@ -22,19 +22,8 @@ PRODUCT_SOONG_NAMESPACES += \
 TARGET_EXCLUDES_AUDIOFX := true
 PRODUCT_NO_CAMERA := true
 
-# Sony Framework
-ifeq ($(TARGET_SHIPS_SONY_FRAMEWORK),true)
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/sony/extras/lib/common/framework/system/,$(TARGET_COPY_OUT_SYSTEM)/) \
-    $(call find-copy-subdir-files,*,device/sony/extras/lib/common/framework/system_ext/,$(TARGET_COPY_OUT_SYSTEM_EXT)/) \
-    $(call find-copy-subdir-files,*,device/sony/extras/lib/common/framework/product/,$(TARGET_COPY_OUT_PRODUCT)/)
-endif
-
 # Audio Enhancements
 $(call inherit-product, device/sony/extras/lib/yodo/audio/audio.mk)
-
-# Live Wallpapers
-#$(call inherit-product, device/sony/extras/lib/common/lwp/lwp.mk)
 
 # Vendor files
 $(call inherit-product, vendor/sony/extras/extras-vendor.mk)

@@ -142,10 +142,3 @@ product/lib64/libmepstarterjni.so
 system_ext/framework/audiosphere.jar
 system_ext/etc/permissions/audiosphere.xml
 system/priv-app/MusicFX/MusicFX.apk
-product/app/AudioModeProvider/AudioModeProvider.apk
-product/app/MediaModeControlWidget-yodo/MediaModeControlWidget-yodo.apk
-product/etc/sysconfig/config_jp.co.sony.mc.app.mediamodecontrolwidget.xml
-
-# mediavibration
-system_ext/etc/permissions/com.sonymobile.mediavibration.xml
-system_ext/priv-app/MediaVibration/MediaVibration.apk

@@ -40,7 +40,13 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .add_needed('libiVptLibC.so'),
     'vendor/bin/hw/vendor.dolby.media.c2@1.0-service': blob_fixup()
-        .add_needed("libshim_dolby.so")
+        .add_needed("libshim_dolby.so"),
+    (
+     'vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc',
+     'vendor/etc/init/android.hardware.media.c2@1.0-threesixty-ra-service.rc',
+    ): blob_fixup()
+	.regex_replace('writepid.*', 'task_profiles ProcessCapacityHigh HighPerformance'),
+    
 }
 
 module = ExtractUtilsModule(

@@ -11,7 +11,7 @@ product/etc/permissions/com.sonyericsson.music.xml
 
 # 360 RA
 # product/overlay/ThreeSixtyRASystem-pdx234-Overlay.apk
-product/app/ThreeSixtyRASettings/ThreeSixtyRASettings.apk
+product/app/ThreeSixtyRASettings/ThreeSixtyRASettings.apk|cdff602a62a7c5305f5485599b139cd093251f70
 product/etc/permissions/com.sony.threesixtyra.audiofx.xml
 product/etc/permissions/jp.co.sony.threesixtyra.system.xml
 product/etc/permissions/com.sony.360ra.xml
@@ -28,7 +28,7 @@ vendor/lib64/libthreesixty_ra_codec2_store.so
 system_ext/etc/permissions/com.dolby.daxservice.xml
 system_ext/lib64/vendor.dolby.hardware.dms@2.0.so
 system_ext/priv-app/DolbySound/DolbySound.apk
-system_ext/priv-app/daxService/daxService.apk
+system_ext/priv-app/daxService/daxService.apk|3471801dec9c8cd8b439dfb5a1ea2ecc004a2a13
 system_ext/lib64/extractors/libmmparserextractor.so
 system_ext/lib64/libavenhancements.so;DISABLE_CHECKELF
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
@@ -142,3 +142,23 @@ product/lib64/libmepstarterjni.so
 system_ext/framework/audiosphere.jar
 system_ext/etc/permissions/audiosphere.xml
 system/priv-app/MusicFX/MusicFX.apk
+
+# asl
+product/etc/asl/com.sonymobile.photopro.data.safety.xml
+product/etc/asl/jp.co.sony.mc.usbextoutaudio.data.safety.xml
+product/etc/asl/jp.co.sony.mc.videopro.data.safety.xml
+product/etc/sysconfig/config_jp.co.sony.mc.usbextoutaudio.xml
+product/etc/sysconfig/extmonitorapp-initial-package-stopped-states.xml
+product/etc/sysconfig/preinstalled-package-app-metadata-photopro.xml
+product/etc/sysconfig/preinstalled-package-app-metadata-videopro.xml
+
+# framework
+system/etc/permissions/com.sony.device.xml
+product/etc/permissions/com.google.protobuf-2.3.0.xml
+product/etc/permissions/com.sonyericsson.idd.xml
+product/etc/permissions/com.sonymobile.mmwdiapi.somc-mmwdiapi.xml
+system/framework/com.sony.device.jar
+product/framework/com.google.protobuf-2.3.0-dummy.jar
+product/framework/com.sonyericsson.idd_impl.jar
+product/framework/somc-ext-mmwdiapi.jar
+

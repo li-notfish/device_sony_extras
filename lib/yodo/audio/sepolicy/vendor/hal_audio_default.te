@@ -12,9 +12,4 @@ allow hal_audio_default vendor_tee_listener_prop:file { read open getattr map };
 allow hal_audio_default vendor_camera_running_status_prop:file { read open getattr map };
 allow hal_audio_default vendor_camera_sensor_prop:file { read open getattr map };
 
-allow hal_audio_default vendor_360ra_prop:file {read getattr map open};
-allow hal_audio_default vendor_spatializer_prop:file {read getattr map open};
-allow hal_audio_default vendor_360ra_restricted_prop:file {read getattr map open};
-set_prop(hal_audio_default,vendor_spatializer_prop)
-set_prop(hal_audio_default,vendor_360ra_restricted_prop)
-set_prop(hal_audio_default,vendor_360ra_prop)
+set_prop(hal_audio_default, vendor_sony_spatializer_dolby_prop)

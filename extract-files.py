@@ -22,7 +22,6 @@ namespace_imports = [
     'hardware/qcom-caf/sm8550',
     'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/sony/sm8550-common',
-    "device/sony/extras",
 ]
 
 blob_fixups: blob_fixups_user_type = {
@@ -46,7 +45,11 @@ blob_fixups: blob_fixups_user_type = {
      'vendor/etc/init/android.hardware.media.c2@1.0-threesixty-ra-service.rc',
     ): blob_fixup()
 	.regex_replace('writepid.*', 'task_profiles ProcessCapacityHigh HighPerformance'),
-    
+    'vendor/lib64/soundfx/libswdap.so': blob_fixup()
+    .binary_regex_replace(b'\x1f\x00\x00\x71\xe0\x03\x00\x91\xf3\x17\x9f\x1a\x41\x62\x04\x94',
+                          b'\x1f\x00\x00\x71\xe0\x03\x00\x91\x13\x00\x80\x52\x41\x62\x04\x94')
+    .binary_regex_replace(rb'\x09\x00\x00\x12\x89\x02\x09\x0b\x3f\x01\x08\x6b\xca\x01\x00\x54',
+                          b'\x09\x00\x00\x12\x89\x02\x09\x0b\x3f\x01\x08\x6b\x0e\x00\x00\x14')
 }
 
 module = ExtractUtilsModule(

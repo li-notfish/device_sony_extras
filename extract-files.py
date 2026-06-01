@@ -50,6 +50,8 @@ blob_fixups: blob_fixups_user_type = {
                           b'\x1f\x00\x00\x71\xe0\x03\x00\x91\x13\x00\x80\x52\x41\x62\x04\x94')
     .binary_regex_replace(rb'\x09\x00\x00\x12\x89\x02\x09\x0b\x3f\x01\x08\x6b\xca\x01\x00\x54',
                           b'\x09\x00\x00\x12\x89\x02\x09\x0b\x3f\x01\x08\x6b\x0e\x00\x00\x14')
+    'vendor/etc/dolby/dax-default.xml': blob_fixup()
+        .regex_replace('volume-leveler-enable value="true"', 'volume-leveler-enable value="false"'),
 }
 
 module = ExtractUtilsModule(

@@ -97,10 +97,6 @@ vendor/etc/windnoise_reduction_back.data
 vendor/etc/windnoise_reduction.data
 vendor/etc/windnoise_reduction_stat_back.data
 
-# Audioutil
-system_ext/priv-app/ExtendedAudioService/ExtendedAudioService.apk
-system_ext/etc/permissions/com.sonymobile.audioutil.xml
-
 # 360 RA data file
 vendor/etc/XTC_speaker_coef.hki
 

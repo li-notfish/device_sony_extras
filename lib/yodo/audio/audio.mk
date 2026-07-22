@@ -62,5 +62,4 @@ PRODUCT_PACKAGES += \
 
 # Patch
 PRODUCT_PACKAGES += \
-    libshim_dolby \
-    DolbyPermissionFixer
+    libshim_dolby 

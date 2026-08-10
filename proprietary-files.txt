@@ -11,7 +11,7 @@ product/etc/permissions/com.sonyericsson.music.xml
 
 # 360 RA
 # product/overlay/ThreeSixtyRASystem-pdx234-Overlay.apk
-product/app/ThreeSixtyRASettings/ThreeSixtyRASettings.apk|cdff602a62a7c5305f5485599b139cd093251f70
+product/app/ThreeSixtyRASettings/ThreeSixtyRASettings.apk|9c98f28149801e19500174223301da1ac9615446
 product/etc/permissions/com.sony.threesixtyra.audiofx.xml
 product/etc/permissions/jp.co.sony.threesixtyra.system.xml
 product/etc/permissions/com.sony.360ra.xml
@@ -28,7 +28,7 @@ vendor/lib64/libthreesixty_ra_codec2_store.so
 system_ext/etc/permissions/com.dolby.daxservice.xml
 system_ext/lib64/vendor.dolby.hardware.dms@2.0.so
 system_ext/priv-app/DolbySound/DolbySound.apk
-system_ext/priv-app/daxService/daxService.apk|3471801dec9c8cd8b439dfb5a1ea2ecc004a2a13
+system_ext/priv-app/daxService/daxService.apk|05885798d47dac143b61b74f7de39e2789f2c6f7
 system_ext/lib64/extractors/libmmparserextractor.so
 system_ext/lib64/libavenhancements.so;DISABLE_CHECKELF
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
@@ -149,12 +149,16 @@ product/etc/sysconfig/preinstalled-package-app-metadata-photopro.xml
 product/etc/sysconfig/preinstalled-package-app-metadata-videopro.xml
 
 # framework
-system/etc/permissions/com.sony.device.xml
-product/etc/permissions/com.google.protobuf-2.3.0.xml
-product/etc/permissions/com.sonyericsson.idd.xml
+system/etc/permissions/com.sony.device.xml|8fcebe6137ffab449ac410c1e5e73994f13aa467
+system/etc/permissions/com.sonyericsson.colorextraction.xml|4f11a3c53db3d3fa7f058c32a912243573374e48
+system/etc/permissions/com.sonymobile.mmwdiapi.somc-mmwdiapi.xml|64c2596bacc0453e1a0d98b962e0066e52436ccb
+product/etc/permissions/com.google.protobuf-2.3.0.xml|3e6191507d92317f2acd4dcb80dcdd32d1032e8d
+product/etc/permissions/com.sonyericsson.idd.xml|cfca3285cdf2213f1b9999d7c379573cdb12dab3
 product/etc/permissions/com.sonymobile.mmwdiapi.somc-mmwdiapi.xml
-system/framework/com.sony.device.jar
-product/framework/com.google.protobuf-2.3.0-dummy.jar
-product/framework/com.sonyericsson.idd_impl.jar
-product/framework/somc-ext-mmwdiapi.jar
+system/framework/com.sony.device.jar|eaf0a987ed78062464f3e8c2fad70ab24a2e20f7
+system/framework/com.sonyericsson.colorextraction_impl.jar|70ff98c6f5dee46a32be2d3d79d0658712962f76
+system/framework/somc-ext-mmwdiapi.jar|d33e7623682c0963805bda21657769abfb771dc8
+product/framework/com.google.protobuf-2.3.0-dummy.jar|88c1b77d0118f3f822713265dadb937933b256d5
+product/framework/com.sonyericsson.idd_impl.jar|70cc31967e331b64c2ca4761fae13cb68c22d328
+product/framework/somc-ext-mmwdiapi.jar|9a0c789d3901494bbc81342869b54e769b316311
 

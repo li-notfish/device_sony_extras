@@ -45,6 +45,18 @@ blob_fixups: blob_fixups_user_type = {
     #  'vendor/etc/init/android.hardware.media.c2@1.0-threesixty-ra-service.rc',
     # ): blob_fixup()
 	# .regex_replace('writepid.*', 'task_profiles ProcessCapacityHigh HighPerformance'),
+    (
+	'vendor/lib64/libcodec2_soft_ac4dec.so',
+	'vendor/lib64/libcodec2_soft_ddpdec.so',
+	'vendor/lib64/libcodec2_soft_dolby.so',
+	'vendor/lib64/libcodec2_soft_mha1dec.so',
+	'vendor/lib64/libcodec2_soft_mhm1dec.so',
+	'vendor/lib64/libdlbdsservice.so',
+	'vendor/lib64/libdlbpreg.so',
+	'vendor/lib64/soundfx/libdlbvol.so',
+	'vendor/lib64/soundfx/libswdap.so',
+    ): blob_fixup()
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
     'vendor/lib64/soundfx/libswdap.so': blob_fixup()
     .binary_regex_replace(b'\x1f\x00\x00\x71\xe0\x03\x00\x91\xf3\x17\x9f\x1a\x41\x62\x04\x94',
                           b'\x1f\x00\x00\x71\xe0\x03\x00\x91\x13\x00\x80\x52\x41\x62\x04\x94')

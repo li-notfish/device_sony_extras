@@ -157,8 +157,5 @@ product/etc/permissions/com.sonyericsson.idd.xml|cfca3285cdf2213f1b9999d7c379573
 product/etc/permissions/com.sonymobile.mmwdiapi.somc-mmwdiapi.xml
 system/framework/com.sony.device.jar|eaf0a987ed78062464f3e8c2fad70ab24a2e20f7
 system/framework/com.sonyericsson.colorextraction_impl.jar|70ff98c6f5dee46a32be2d3d79d0658712962f76
-system/framework/somc-ext-mmwdiapi.jar|d33e7623682c0963805bda21657769abfb771dc8
 product/framework/com.google.protobuf-2.3.0-dummy.jar|88c1b77d0118f3f822713265dadb937933b256d5
 product/framework/com.sonyericsson.idd_impl.jar|70cc31967e331b64c2ca4761fae13cb68c22d328
-product/framework/somc-ext-mmwdiapi.jar|9a0c789d3901494bbc81342869b54e769b316311
-

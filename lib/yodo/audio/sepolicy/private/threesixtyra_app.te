@@ -14,6 +14,7 @@ allow threesixtyra_app permission_checker_service:service_manager find;
 allow threesixtyra_app thermal_service:service_manager find;
 allow threesixtyra_app tethering_service:service_manager find;
 allow threesixtyra_app virtual_device_service:service_manager find;
+allow threesixtyra_app gpu_service:service_manager find;
 
 allow threesixtyra_app self:anon_inode create_file_perms;
 

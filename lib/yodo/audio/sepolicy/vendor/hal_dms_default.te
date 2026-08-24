@@ -8,3 +8,4 @@ allow hal_dms_default vendor_data_file:file create_file_perms;
 allow hal_dms_default vendor_data_file:dir rw_dir_perms;
 
 binder_call(hal_dms_default, platform_app)
+binder_call(hal_dms_default,platform_app_36)

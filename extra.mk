@@ -19,8 +19,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/extras
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/sony/extras/lib/common/framework/system/,$(TARGET_COPY_OUT_SYSTEM)/) \
-    $(call find-copy-subdir-files,*,device/sony/extras/lib/common/framework/product/,$(TARGET_COPY_OUT_PRODUCT)/)
+    $(call find-copy-subdir-files,*,device/sony/extras/lib/common/system/,$(TARGET_COPY_OUT_SYSTEM)/) \
+    $(call find-copy-subdir-files,*,device/sony/extras/lib/common/product/,$(TARGET_COPY_OUT_PRODUCT)/)
 
 # LineageOS overrides
 TARGET_EXCLUDES_AUDIOFX := true

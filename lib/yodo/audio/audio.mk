@@ -48,6 +48,12 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.audio.dolby.ds2.hardbypass=false \
     vendor.audio.dolby.ds2.enabled=false
 
+# Effect routing invalidation (AudioFlinger EffectDapController)
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.audio.invalidate_sleep_before=100000 \
+    vendor.audio.invalidate_sleep_dsee_on=50000 \
+    vendor.audio.invalidate_sleep_after=0
+
 # 360 Reality Audio Props
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.360ra.effect=1 \

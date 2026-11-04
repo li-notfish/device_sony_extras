@@ -1,0 +1,10 @@
+//
+// Copyright (C) 2026 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Dolby DMS HIDL 2.0 headers, used by AudioFlinger's EffectDapDmsClient.
+cc_library_headers {
+    name: "vendor.dolby.hardware.dms@2.0_headers",
+    export_include_dirs: ["include"],
+}

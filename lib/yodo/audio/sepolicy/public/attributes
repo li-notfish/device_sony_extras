@@ -1,1 +1,6 @@
 attribute threesixtyra_data_vendor_access;
+
+# Dolby DMS HAL attributes (public: audioserver is a system_ext client).
+attribute hal_dms;
+attribute hal_dms_server;
+attribute hal_dms_client;

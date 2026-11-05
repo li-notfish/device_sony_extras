@@ -38,8 +38,16 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libiVptApi.so',
     ): blob_fixup()
         .add_needed('libiVptLibC.so'),
+    # The A15 Dolby/360RA services allocate utils::ComponentStore with the A15
+    # sizeof() (264). The A17-built libcodec2_hidl places the virtual RefBase
+    # base at offset 0x110, so the object needs 288 bytes; 264 overflows and
+    # RefBase::createWeak() faults on a null mRefs while registering the store.
+    # Bump the allocation to 512 bytes (one mov w0, #imm instruction).
     'vendor/bin/hw/vendor.dolby.media.c2@1.0-service': blob_fixup()
-        .add_needed("libshim_dolby.so"),
+        .add_needed("libshim_dolby.so")
+        .binary_regex_replace(b'\x00\x21\x80\x52', b'\x00\x40\x80\x52'),
+    'vendor/bin/hw/android.hardware.media.c2@1.0-threesixty-ra-service': blob_fixup()
+        .binary_regex_replace(b'\x00\x21\x80\x52', b'\x00\x40\x80\x52'),
     # (
     #  'vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc',
     #  'vendor/etc/init/android.hardware.media.c2@1.0-threesixty-ra-service.rc',

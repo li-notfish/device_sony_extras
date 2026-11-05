@@ -13,6 +13,3 @@ allow hal_audio_default vendor_camera_running_status_prop:file { read open getat
 allow hal_audio_default vendor_camera_sensor_prop:file { read open getattr map };
 
 set_prop(hal_audio_default, vendor_audio_prop)
-
-# libtsrupmix / libtsrspatializer run in the audio HAL and read the 360RA flag
-get_prop(hal_audio_default, audio_prop)

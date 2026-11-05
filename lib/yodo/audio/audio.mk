@@ -59,6 +59,11 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.360ra.effect=1 \
     ro.audio.spatializer_enabled=true
 
+# Policy-side copy: vendor.360ra.effect is vendor_default_prop and audioserver
+# (coredomain) cannot read it. audio_prop is readable by audioserver.
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.audio.360ra.effect=1
+
 PRODUCT_ODM_PROPERTIES += \
     vendor.sony_spatializer.suppress.dolby=true
 

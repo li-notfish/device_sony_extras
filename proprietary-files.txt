@@ -9,6 +9,10 @@ system_ext/priv-app/SoundEnhancement/SoundEnhancement.apk
 vendor/etc/audio_app_white_list.xml
 product/etc/permissions/com.sonyericsson.music.xml
 
+# Audioutil
+system_ext/priv-app/ExtendedAudioService/ExtendedAudioService.apk
+system_ext/etc/permissions/com.sonymobile.audioutil.xml
+
 # 360 RA
 # product/overlay/ThreeSixtyRASystem-pdx234-Overlay.apk
 product/app/ThreeSixtyRASettings/ThreeSixtyRASettings.apk|9c98f28149801e19500174223301da1ac9615446
